@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarHeader"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:elevation="5dp"
+            android:fitsSystemWindows="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/JudulKecil"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:background="@drawable/header"
+                android:elevation="5dp"
+                android:text="Booking Tikect Bus"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/Trav"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:background="@drawable/header"
+                android:elevation="5sp"
+                android:text="SULSEL"
+                android:textColor="@android:color/white"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jdlLogin"
+                android:layout_width="84dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/header"
+                android:elevation="5sp"
+                android:text="LOGIN"
+                android:textColor="@android:color/white"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/bgKotak"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:strokeColor="#03dac6"
+                    app:strokeWidth="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtLoginEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp">
+
+                            <EditText
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#03dac6"
+                                android:drawableStart="@drawable/ic_baseline_email_24"
+                                android:drawablePadding="20dp"
+                                android:hint="Masukkan Email"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:textSize="16sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtLoginPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            app:passwordToggleEnabled="true">
+
+                            <EditText
+                                android:id="@+id/password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#03dac6"
+                                android:drawableStart="@drawable/ic_key_24"
+                                android:drawablePadding="20dp"
+                                android:hint="Password"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:textSize="16sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="30dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Login"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+                            app:backgroundTint="#03dac6"
+                            app:cornerRadius="50dp" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="10dp"
+                        android:background="@android:color/transparent"
+                        android:text="Tidak memiliki akun? Daftar sekarang"
+                        android:textAllCaps="false"
+                        android:textColor="#92A7AB"
+                        android:textSize="12sp"
+                        app:cornerRadius="50dp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="© TRAV Apps"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

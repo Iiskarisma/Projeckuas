@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_akun"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frheader"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/jdlPesanTravel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="142dp"
+                android:layout_height="29dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_login"
+                android:fontFamily="sans-serif-black"
+                android:text="Pesan Travel"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="profileMenu"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="#03dac6"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgProfil"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/ic_profil" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgProfil"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="PROFIL"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#03dac6"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="historyMenu"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="#03dac6"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgHistory"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/ic_history" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgHistory"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="RIWAYAT"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#808080"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="pesanKereta"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="#03dac6"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgKereta"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/ic_bus" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgKereta"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="BOOKING\nBUS"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#445B89"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="pesanHotel"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="#03dac6"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgHotel"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="15dp"
+                    android:src="@drawable/ic_kursi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgHotel"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="BOOKING\nKURSI"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#cc913f"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sign Out"
+        android:textSize="16sp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:backgroundTint="#03dac6"
+        app:cornerRadius="50dp" />
+
+</LinearLayout>

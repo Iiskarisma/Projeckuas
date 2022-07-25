@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/drawable/ic_calendar.xml" value="0.18888888888888888" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/drawable/ic_key_24.xml" value="0.23055555555555557" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/drawable/ic_person.xml" value="0.2755208333333333" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/drawable/ic_person_16.xml" value="0.2755208333333333" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/drawable/ic_wifi.xml" value="0.2755208333333333" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/layout/activity_dashboard_pesan.xml" value="0.259375" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/layout/activity_hotel.xml" value="0.259375" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/layout/activity_loginform.xml" value="0.259375" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/layout/activity_menu_pesan.xml" value="0.259375" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/layout/activity_pemesanan_hotel.xml" value="0.259375" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/layout/activity_pemesanan_kereta.xml" value="0.259375" />
+        <entry key="..\:/AndroidStudioProject/Trav/app/src/main/res/layout/activity_profil.xml" value="0.259375" />
+        <entry key="..\:/android studio/Trav/app/src/main/res/layout/activity_loginform.xml" value="0.16145833333333334" />
+        <entry key="..\:/android studio/Trav/app/src/main/res/layout/activity_menu_pesan.xml" value="0.17552083333333332" />
+        <entry key="..\:/android studio/Trav/app/src/main/res/layout/activity_pemesanan_bus.xml" value="0.17552083333333332" />
+        <entry key="..\:/android studio/Trav/app/src/main/res/layout/activity_pemesanan_hotel.xml" value="0.17552083333333332" />
+        <entry key="..\:/android studio/Trav/app/src/main/res/layout/activity_pemesanan_kereta.xml" value="0.17552083333333332" />
+        <entry key="..\:/android studio/Trav/app/src/main/res/layout/activity_profil.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
